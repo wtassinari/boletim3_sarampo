@@ -1,0 +1,43 @@
+project:
+  type: website
+
+website:
+  title: "Boletim Eletrônico"
+  favicon: imagens/sarampo2.png
+  navbar:
+    reader-mode: true
+    background: danger
+    foreground: white
+    style: docked
+    alignment: center
+    border: true
+    search: true
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - cobertura.qmd
+  sidebar:
+    tools:
+      - icon: twitter
+        href: https://twitter.com
+      - icon: github
+        href: https://github.com/wtassinari
+        menu:
+          - text: Source Code
+            url:  https://code.com
+          - text: Report a Bug
+            url:  https://bugs.com
+  page-footer: "Copyright 2021, Norah Jones" 
+  twitter-card:
+    creator: "@wtassinari"
+    site: "@rstudio"
+
+format:
+  html:
+    theme: minty
+    css: styles.css
+    
+
+
+
